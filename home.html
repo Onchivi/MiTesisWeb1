@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciberseguridad y Protección de Datos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Ciberseguridad y Protección de Datos</h1>
+      <p class="lead">
+        Un enfoque práctico y teórico sobre la seguridad en la era digital
+      </p>
+    </div>
+
+    
+    </div>
+
+    <!-- Aquí irá más contenido -->
+
+    <div class="container mt-3">
+      <h2>Crear Usuario</h2>
+      <form id="createForm">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" class="form-control" id="apellido" required />
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad:</label>
+          <input type="number" class="form-control" id="edad" required />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" class="form-control" id="telefono" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Crear Usuario</button>
+      </form>
+    </div>
+
+    <div class="container mt-3">
+      <h2>Ver Usuarios</h2>
+      <button onclick="obtenerUsuarios()" class="btn btn-info">
+        Cargar Usuarios
+      </button>
+      <div id="usuariosLista" class="mt-3">
+        <!-- Aquí se mostrarán los usuarios -->
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <h2>Actualizar Usuario</h2>
+      <form id="updateForm">
+        <div class="form-group">
+          <label for="updateId">ID del Usuario:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="updateId"
+            placeholder="Introduce el ID del usuario"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateNombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="updateNombre"
+            placeholder="Nuevo Nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateApellido">Apellido:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="updateApellido"
+            placeholder="Nuevo Apellido"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateEdad">Edad:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="updateEdad"
+            placeholder="Nueva Edad"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="updateTelefono">Teléfono:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="updateTelefono"
+            placeholder="Nuevo Teléfono"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-warning">
+          Actualizar Usuario
+        </button>
+      </form>
+    </div>
+
+    <div class="container mt-3">
+      <h2>Eliminar Usuario</h2>
+      <form id="deleteForm">
+        <div class="form-group">
+          <label for="deleteId">ID del Usuario:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="deleteId"
+            placeholder="Introduce el ID del usuario a eliminar"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-danger">Eliminar Usuario</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

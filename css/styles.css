@@ -1,0 +1,137 @@
+body {
+  background-color: #1c1e22; /* Fondo oscuro para todo el sitio */
+  color: #d1d4da; /* Texto claro para contraste */
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el contenedor general */
+.container {
+  color: #d1d4da; /* Texto claro */
+  background-color: #1c1e22; /* Fondo oscuro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los títulos de sección */
+.container h2 {
+  color: #00d2ff; /* Color brillante para los títulos */
+}
+
+/* Estilos para el botón de carga de usuarios */
+.btn-info {
+  background-color: #17a2b8; /* Color azul cibernético */
+  border-color: #17a2b8; /* Bordes del mismo color */
+}
+
+.btn-info:hover {
+  background-color: #1295a3; /* Color ligeramente más oscuro al pasar el ratón por encima */
+  border-color: #1295a3;
+}
+
+/* Estilos para la lista de usuarios */
+#usuariosLista {
+  background-color: #24292e; /* Fondo ligeramente diferente para destacar la lista */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#usuariosLista ul {
+  list-style: none; /* Eliminar los estilos de lista predeterminados */
+  padding: 0;
+}
+
+#usuariosLista li {
+  background-color: #2d333b; /* Fondo para cada usuario */
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron {
+  background-color: #24292e; /* Fondo oscuro para el jumbotron */
+  color: white; /* Color de texto claro */
+  padding: 2rem 1rem; /* Espaciado alrededor del contenido */
+}
+
+.jumbotron h1 {
+  color: #00d2ff; /* Color brillante para el título */
+  font-weight: bold; /* Negrilla para el título */
+}
+
+.jumbotron p {
+  color: #6c757d; /* Color más claro para el párrafo */
+}
+
+/* Personalización de contenedores y títulos */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #00b4ff;
+}
+
+/* Personalización de formularios */
+form {
+  background-color: #2d333b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-group label {
+  color: #adb5bd;
+}
+
+input,
+select,
+textarea {
+  background-color: #2d333b;
+  color: #ffffff;
+  border: 1px solid #444c56;
+}
+
+/* Personalización de botones */
+.btn {
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d9534f;
+}
+
+/* Estilo adicional para hover de botones */
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Estilos para enlaces */
+a,
+a:hover {
+  color: #00c4ff;
+}
+
+/* Estilos para listas y elementos de lista */
+ul,
+li {
+  color: #d1d4da;
+}
