@@ -1,5 +1,5 @@
 <?php
-$url = parse_url(getenv("jawsdb-parallel-53068"));
+$url = parse_url(getenv("mysql://u1n225xsewyuow5e:mfstkq8grwzlldab@y6aj3qju8efqj0w1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qwbv79bdopkafa17"));
 
 $server = $url["host"];
 $username = $url["user"];
