@@ -1,14 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "miapp";
+$url = parse_url(getenv("jawsdb-parallel-53068"));
 
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, $dbname);
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
-// Verificar conexión
+$conn = new mysqli($server, $username, $password, $db);
+
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
+
 ?>
